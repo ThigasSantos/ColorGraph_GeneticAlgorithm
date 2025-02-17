@@ -31,7 +31,7 @@ int main() {
         InstanceReader reader(inputFilename);
         auto adjacencyMatrix = reader.getAdjacencyMatrix();
 
-        GeneticAlgorithm ga(adjacencyMatrix, 500, 10000, 0.2);
+        GeneticAlgorithm ga(adjacencyMatrix, 20, 10000, 0.05);
         std::vector<int> solution = ga.solve();
 
         std::cout << "\n=== Processando " << inputFilename << " ===\n";
